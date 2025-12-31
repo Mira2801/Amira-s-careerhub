@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title> Amira's CareerHub </title>
+  <button onclick="playAudio()">Play Audio</button>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<div id="clock"></div>
+  <div id="homePage" class="page">
+    <div class="header">
+      <h1>Hi , I'm Amira </h1>
+      <p>Welcome to My Homepage !</p>
+	  
+	  <h2> About Me </h2>
+	  <img src= "D:\Mira\Desktop\IMD318 indv\images\amira.jpeg" width="240" height="260" class="border-img">
+	  <h3> I am Nur Amira Natasya binti Ahmad Yapis. I'm currently in semester 5 studying at Universiti Teknologi Mara / UiTM Cawangan Kedah and taking Diploma of Information Management. 
+	  I'm very committed to delivering work that meets the business goals. I am also an excellent communicator who works well in both team settings and independently.
+	  </h3>
+	  <h2> Hobbies</h2>
+	  <b><li>Playing Games </li><br></b>
+        <b><li>Singing</li><br></b>
+        <b><li>Reading books</li></b>
+<br>
+      <button id="myButton">Click Me!</button>
+    </div>
+  </div>
+
+<div id="menuPage" class="page" style="display:none;">
+  <h2>My Menu</h2>
+  <div id="menuList">
+    <a href="Experience.html" class="menu-item">Experience</a>
+    <a href="Education.html" class="menu-item">Education</a>
+    <a href="My Gallery.html" class="menu-item">My Gallery</a>
+    <a href="Skills.html" class="menu-item">Skills</a>
+    <a href="Contacts.html" class="menu-item">Contacts</a>
+	
+  </div>
+  <button id="backButton" style="display:none;">Back to Homepage</button> <!-- hidden initially -->
+</div>
+
+
+
+
+<audio id="bgAudio" loop>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playAudio() {
+  var audio = document.getElementById("bgAudio");
+  audio.play();
+}
+</script>
+
+ <script>
+    function goToMenu() {
+      window.location.href = "menu.html"; 
+    }
+  </script>
+  
+  <script src="script.js"> 
+  
+  </script>
+ 
+</body>
+</html>
